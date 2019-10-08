@@ -2,7 +2,6 @@
 
 /***************************************************************
  * Extension Manager/Repository config file for ext "static_info_tables_pt".
- * Auto generated 11-04-2016 10:03
  * Manual updates:
  * Only the data in the array - everything else is removed by next
  * writing. "version" and "dependencies" must not be touched!
@@ -17,18 +16,16 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => false,
     'createDirs' => '',
     'clearcacheonload' => false,
-    'author' => 'Simon Schmidt',
-    'author_email' => 'sfs@marketing-factory.de',
-    'author_company' => 'Marketing Factory Consulting GmbH',
+    'author' => 'Ephraim Härer',
+    'author_email' => 'ephraim.haerer@renolit.com',
+    'author_company' => 'RENOLIT SE',
     'constraints' => [
-        'depends' => array(
+        'depends' => [
             'typo3' => '8.7.0-9.5.99',
             'static_info_tables' => '6.7.3-6.7.99',
-        ),
-        'conflicts' => [
         ],
-        'suggests' => [
-        ]
+        'conflicts' => [],
+        'suggests' => [],
     ]
 ];
 
