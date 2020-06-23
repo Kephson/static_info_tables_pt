@@ -1,5 +1,5 @@
 {
-  "name": "sjbr/static-info-tables-pt",
+  "name": "renolit/static-info-tables-pt",
   "description": "Portuguese (pt) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0+",
