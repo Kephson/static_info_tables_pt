@@ -3,13 +3,26 @@
   "description": "Portuguese (pt) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://github.com/Kephson/static_info_tables_pt/issues"
+  },
+  "authors": [
+    {
+      "name": "Simon Schmidt",
+      "role": "Developer"
+    },
+    {
+      "name": "Ephraim Härer",
+      "role": "Developer"
+    }
+  ],
   "replace": {
     "static_info_tables_pt": "self.version",
     "typo3-ter/static-info-tables-pt": "self.version"
   },
   "require": {
-    "php": "^7.0",
-    "typo3/cms-core": "^8.7 || ^9.5",
+    "php": "^7.1",
+    "typo3/cms-core": "^9.5.17 || ^10.4.2",
     "sjbr/static-info-tables": "^6.7"
   }
 }

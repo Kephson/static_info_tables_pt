@@ -1,16 +1,18 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-$sourceField = 'cn_short_en';
-$destField = 'cn_short_pt';
-
-$additionalColumns = array();
-$additionalColumns[$destField] = $GLOBALS['TCA']['static_countries']['columns'][$sourceField];
-$additionalColumns[$destField]['label'] = 'LLL:EXT:static_info_tables_pt/Resources/Private/Language/locallang_db.xlf:static_countries_item.' . $destField;
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('static_countries', $additionalColumns);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('static_countries', $destField, '', 'after:' . $sourceField);
-// Add as search field
-$GLOBALS['TCA']['static_countries']['ctrl']['searchFields'] .= ',' . $destField;
-
-unset($additionalColumns, $additionalFields);
+call_user_func(static function ($extKey, $table) {
+    $additionalFields = [
+        'cn_short_en' => 'cn_short_pt',
+    ];
+    foreach ($additionalFields as $sourceField => $destField) {
+        $additionalColumns = [];
+        $additionalColumns[$destField] = $GLOBALS['TCA'][$table]['columns'][$sourceField];
+        $additionalColumns[$destField]['label'] = 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_db.xlf:static_countries_item.' . $destField;
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, $additionalColumns);
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, $destField, '',
+            'after:' . $sourceField);
+        // Add as search field
+        $GLOBALS['TCA'][$table]['ctrl']['searchFields'] .= ',' . $destField;
+    }
+}, 'static_info_tables_pt', 'static_countries');
