@@ -33,6 +33,8 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 class ext_update
 {
 
+    const EXTENSION_KEY = 'static_info_tables_pt';
+
     /**
      * Main function, returning the HTML content
      *
@@ -54,7 +56,7 @@ class ext_update
         $databaseUpdateUtility->doUpdate('static_info_tables_pt');
 
         $updateLanguageLabels = LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables');
-        $content .= '<p>' . $updateLanguageLabels . ' ' . 'static_info_tables_pt' . '</p>';
+        $content .= '<p>' . $updateLanguageLabels . ' ' . self::EXTENSION_KEY . '</p>';
         return $content;
     }
 
