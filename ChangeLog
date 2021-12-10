@@ -1,0 +1,8 @@
+2021-12-07  Ephraim Härer  <ephraim.haerer@renolit.com>
+    * compatibility for TYPO3 11.5.x
+
+2021-10-28  Timo Feuerstein  <timo.feuerstein@renolit.com>
+    * provide version for 9.5 and 10.4
+
+2021-10-27  Ephraim Härer  <ephraim.haerer@renolit.com>
+    * initial release of Github repo
