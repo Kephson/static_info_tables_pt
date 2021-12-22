@@ -1,30 +1,36 @@
 {
   "name": "renolit/static-info-tables-pt",
-  "description": "Portuguese (pt) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
   "type": "typo3-cms-extension",
-  "license": "GPL-2.0-or-later",
+  "description": "Portuguese (pt) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "Static Info Tables"
+  ],
   "support": {
     "issues": "https://github.com/Kephson/static_info_tables_pt/issues"
   },
   "authors": [
     {
-      "name": "Simon Schmidt",
+      "name": "Ephraim Härer",
       "role": "Developer"
     },
     {
-      "name": "Ephraim Härer",
-      "role": "Developer",
-      "email": "ephraim.haerer@renolit.com",
-      "homepage": "https://www.renolit.com"
+      "name": "Timo Feuerstein",
+      "role": "Developer"
     }
   ],
   "replace": {
     "typo3-ter/static-info-tables-pt": "self.version"
   },
   "require": {
-    "php": ">=7.2",
-    "typo3/cms-core": "^9.5 || ^10.4 || ^11.5",
-    "sjbr/static-info-tables": "^6.9 || ^11.5"
+    "php": "^7.2",
+    "typo3/cms-core": ">=11.5, <12.0",
+    "typo3/cms-extbase": ">=11.5, <12.0",
+    "typo3/cms-extensionmanager": ">=11.5, <12.0",
+    "sjbr/static-info-tables": "^11.5"
   },
   "extra": {
     "typo3/cms": {

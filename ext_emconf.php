@@ -1,4 +1,5 @@
-<?php /** @noinspection PhpUndefinedVariableInspection */
+<?php
+/** @noinspection PhpUndefinedVariableInspection */
 
 /***************************************************************
  * Extension Manager/Repository config file for ext "static_info_tables_pt".
@@ -11,7 +12,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Static Info Tables (pt)',
     'description' => '(pt) language pack for the Static Info Tables providing localized names for countries.',
     'category' => 'misc',
-    'version' => '6.9.2',
+    'version' => '11.5.0',
     'state' => 'stable',
     'uploadfolder' => false,
     'createDirs' => '',
@@ -20,15 +21,14 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'ephraim.haerer@renolit.com',
     'author_company' => 'RENOLIT SE',
     'constraints' => [
-        'depends' => array(
-            'typo3' => '9.5.17-11.5.99',
-            'static_info_tables' => '6.9.0-11.5.99',
-            'php' => '7.2.0-0.0.0',
-        ),
-        'conflicts' => [
+        'depends' => [
+            'typo3' => '11.5.0-11.5.99',
+            'static_info_tables' => '11.5.0-11.5.99',
+            'extbase' => '11.5.0-11.5.99',
+            'extensionmanager' => '11.5.0-11.5.99',
         ],
-        'suggests' => [
-        ]
+        'conflicts' => [],
+        'suggests' => [],
     ]
 ];
 

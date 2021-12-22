@@ -5,7 +5,7 @@ namespace SJBR\StaticInfoTablesPt;
 /**
  *  Copyright notice
  *  (c) 2017 Achim Fritz <af@lightwerk.com>
- *  (c) 2020 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2021 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the Typo3 project. The Typo3 project is
  *  free software; you can redistribute it and/or modify
@@ -21,6 +21,7 @@ namespace SJBR\StaticInfoTablesPt;
  *  This copyright notice MUST APPEAR in all copies of the script!
  */
 
+use Exception;
 use SJBR\StaticInfoTables\Cache\ClassCacheManager;
 use SJBR\StaticInfoTables\Utility\DatabaseUpdateUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -39,6 +40,7 @@ class ext_update
      * Main function, returning the HTML content
      *
      * @return string HTML
+     * @throws Exception
      */
     public function main()
     {
