@@ -5,7 +5,7 @@
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
  *  (c) 2015 Simon Schmidt <sfs@marketing-factory.de>
- *  (c) 2020 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -33,39 +33,39 @@ class Country extends AbstractEntity
 {
 
     /**
-     * The Portugues short name
+     * The Portuguese short name
      *
      * @var string
      */
-    protected $shortNamePt = '';
+    protected string $shortNamePt = '';
 
     /**
-     * The Portugues official name
+     * The Portuguese official name
      *
      * @var string
      */
-    protected $officialNamePt = '';
+    protected string $officialNamePt = '';
 
     /**
-     * The Portugues capital name
+     * The Portuguese capital name
      *
      * @var string
      */
-    protected $capitalPt = '';
+    protected string $capitalPt = '';
 
     /**
-     * Sets the Portugues short name.
+     * Sets the Portuguese short name.
      *
      * @param string $shortNamePt
      * @return void
      */
-    public function setShortNamePt($shortNamePt): void
+    public function setShortNamePt(string $shortNamePt): void
     {
         $this->shortNamePt = $shortNamePt;
     }
 
     /**
-     * Gets the Portugues short name.
+     * Gets the Portuguese short name.
      *
      * @return string
      */
@@ -75,18 +75,18 @@ class Country extends AbstractEntity
     }
 
     /**
-     * Sets the Portugues short name.
+     * Sets the Portuguese short name.
      *
      * @param string $officialNamePt
      * @return void
      */
-    public function setOfficialtNamePt($officialNamePt): void
+    public function setOfficialtNamePt(string $officialNamePt): void
     {
         $this->officialNamePt = $officialNamePt;
     }
 
     /**
-     * Gets the Portugues short name.
+     * Gets the Portuguese short name.
      *
      * @return string
      */
@@ -96,18 +96,18 @@ class Country extends AbstractEntity
     }
 
     /**
-     * Sets the Portugues short name.
+     * Sets the Portuguese short name.
      *
      * @param string $capitalPt
      * @return void
      */
-    public function setCapitalPt($capitalPt): void
+    public function setCapitalPt(string $capitalPt): void
     {
         $this->capitalPt = $capitalPt;
     }
 
     /**
-     * Gets the Portugues short name.
+     * Gets the Portuguese short name.
      *
      * @return string
      */

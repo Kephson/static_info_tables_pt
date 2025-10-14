@@ -33,6 +33,11 @@
 	"replace": {
 		"typo3-ter/static-info-tables-pt": "self.version"
 	},
+	"autoload": {
+		"psr-4": {
+			"RENOLIT\\StaticInfoTablesHu\\": "Classes/"
+		}
+	},
 	"config": {
 		"allow-plugins": {
 			"ergebnis/composer-normalize": true,
@@ -49,5 +54,19 @@
 			"extension-key": "static_info_tables_pt",
 			"web-dir": ".Build/web"
 		}
+	},
+	"scripts": {
+		"prepare-release": [
+			"@extension-create-libs",
+			"rm -rf .devbox",
+			"rm -rf Tests/",
+			"rm .gitignore",
+			"rm .scrutinizer.yml",
+			"rm disabled.travis.yml",
+			"rm -rf .ddev",
+			"rm -rf .github",
+			"rm -rf .editorconfig",
+			"rm -rf .gitattributes"
+		]
 	}
 }

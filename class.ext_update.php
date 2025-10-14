@@ -5,7 +5,7 @@ namespace SJBR\StaticInfoTablesPt;
 /**
  *  Copyright notice
  *  (c) 2017 Achim Fritz <af@lightwerk.com>
- *  (c) 2020-2024 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the Typo3 project. The Typo3 project is
  *  free software; you can redistribute it and/or modify

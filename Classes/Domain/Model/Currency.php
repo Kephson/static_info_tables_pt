@@ -3,7 +3,7 @@
  *  Copyright notice
  *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
  *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
- *  (c) 2020 Ephraim Härer <ephraim.haerer@renolit.com>
+ *  (c) 2020-2025 Ephraim Härer <ephraim.haerer@renolit.com>
  *  All rights reserved
  *  This script is part of the TYPO3 project. The TYPO3 project is
  *  free software; you can redistribute it and/or modify
@@ -31,32 +31,32 @@ class Currency extends AbstractEntity
 {
 
     /**
-     * Portugues name of the currency
+     * Portuguese name of the currency
      *
      * @var string
      */
-    protected $namePt = '';
+    protected string $namePt = '';
 
     /**
-     * Portugues name of the currency subdivision unit
+     * Portuguese name of the currency subdivision unit
      *
      * @var string
      */
-    protected $subdivisionNamePt = '';
+    protected string $subdivisionNamePt = '';
 
     /**
-     * Sets the Portugues name of the currency
+     * Sets the Portuguese name of the currency
      *
      * @param string $namePt
      * @return void
      */
-    public function setNamePt($namePt): void
+    public function setNamePt(string $namePt): void
     {
         $this->namePt = $namePt;
     }
 
     /**
-     * Gets the Portugues name of the currency
+     * Gets the Portuguese name of the currency
      *
      * @return string
      */
@@ -66,18 +66,18 @@ class Currency extends AbstractEntity
     }
 
     /**
-     * Sets the Portugues name of the currency subdivision
+     * Sets the Portuguese name of the currency subdivision
      *
      * @param string $subdivisionNamePt
      * @return void
      */
-    public function setSubdivisionNamePt($subdivisionNamePt): void
+    public function setSubdivisionNamePt(string $subdivisionNamePt): void
     {
         $this->subdivisionNamePt = $subdivisionNamePt;
     }
 
     /**
-     * Gets the Portugues name of the currency subdivision
+     * Gets the Portuguese name of the currency subdivision
      *
      * @return string
      */

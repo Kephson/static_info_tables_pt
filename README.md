@@ -1,12 +1,12 @@
 # Static Info Tables (pt)
 
-This extension provides Portugues language pack for the Static Info Tables
+This extension provides Portuguese language pack for the Static Info Tables
 providing localized names for countries.
 
-Support: 
+Support:
 https://github.com/Kephson/static_info_tables_pt/wiki
 
-Bugtracker: 
+Bugtracker:
 https://github.com/Kephson/static_info_tables_pt/issues
 
 TYPO3 extension repository:
