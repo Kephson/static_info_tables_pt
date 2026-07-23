@@ -28,7 +28,7 @@
 		"typo3/cms-core": "^13.4"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "^2.42"
+		"ergebnis/composer-normalize": "^2.52"
 	},
 	"replace": {
 		"typo3-ter/static-info-tables-pt": "self.version"
@@ -50,8 +50,12 @@
 	},
 	"extra": {
 		"typo3/cms": {
+			"Package": {
+				"providesPackages": {}
+			},
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
 			"extension-key": "static_info_tables_pt",
+			"version": "13.4.1",
 			"web-dir": ".Build/web"
 		}
 	},
